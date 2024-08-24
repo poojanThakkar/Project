@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .men {
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-xxl bg-white p-0">
+        <!--Div For Navbar -->
+        <div class="container-xxl position-relative p-0">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0"
+                style="background: #0F172B !important;">
+                <!-- Logo of website -->
+                <a href="" class="navbar-brand p-0">
+                    <h2 style="color: #FEA116"><img src="img/order-food.png" alt="Logo"> Foodieee</h2>
+                </a>
+                <!-- When Screen Size is small then executive button for taggleable Navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!-- Diffrent Pages add with Navbar -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="iclone.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <a href="FeedBack.html" class="nav-item nav-link">FeedBack</a>
+                    </div>
+                    <!-- Login Page -->
+                    <a href="login.html" class="btn btn-primary py-2 px-4"> Login </a>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+        </div>
+        <br>
+        <br>
+        <!-- For Food Menu -->
+        <div id="menu" class="container-xxl  py-5">
+            <div class="heading text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                <h1 class="mb-5">Our Food Items</h1>
+            </div>
+            <!-- Food Items Start -->
+            <!-- Snacks Menu Items Start -->
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/thepala.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Thepala</h5>
+                        <h5 class="price"> Rs.25 </h5>
+                    </div>
+                    <p>Whole wheat flour, spinach, gram flour, fenugreek leaves, yogurt, green chilies, ginger, garlic,
+                        turmeric, red chili powder, coriander powder, cumin powder, garam masala, salt, oil, water..</p>
+                    <button type="submit" class="submit" onclick="addToCart('Thepala', 25)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/bhajiya.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Bhajiya</h5>
+                        <h5 class="price"> Rs.30 </h5>
+                    </div>
+                    <p> Gram flour (besan), sliced vegetables (such as potatoes, onions, spinach, or chili peppers),
+                        spices (like turmeric, chili powder, cumin seeds), baking soda (for fluffiness), salt, water
+                        (for batter), and oil (for frying).</p>
+                    <button type="submit" class="submit" onclick="addToCart('Bhajiya', 30)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Besan-poli.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Besan-poli</h5>
+                        <h5 class="price"> Rs.35 </h5>
+                    </div>
+                    <p>Whole wheat flour (atta), gram flour (besan), water, salt, and oil or ghee (clarified butter) for
+                        cooking. Sometimes, additional spices or herbs may be added for flavoring, such as ajwain (carom
+                        seeds), cumin seeds, or chopped cilantro.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Besan-Poli', 35)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/burger.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Veg.Burger</h5>
+                        <h5 class="price"> Rs.50 </h5>
+                    </div>
+                    <p>Ground beef (or substitute with turkey, chicken, or a plant-based alternative), burger buns,
+                        lettuce, tomato, onion, pickles, cheese slices, ketchup, mustard, mayonnaise, salt, and pepper.
+                        Optional additions can include bacon, avocado, sautéed mushrooms, fried eggs, or various sauces
+                        and condiments based on personal preference.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Burger', 50)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Chole-bhature.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Chole-Bhature</h5>
+                        <h5 class="price"> Rs.65 </h5>
+                    </div>
+                    <p>Chickpeas, onion, tomato, ginger-garlic paste, spices, oil, flour, semolina, yogurt, baking
+                        powder, baking soda, sugar, salt, water.;c vvl</p>
+                    <button type="submit" class="submit" onclick="addToCart('Chhole-puri', 65)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/dabeli-recipe.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Dabeli</h5>
+                        <h5 class="price"> Rs.30 </h5>
+                    </div>
+                    <p>Dabeli typically includes pav (Indian bread rolls), potatoes, dabeli masala (spice blend),
+                        tamarind chutney, green chutney, garlic chutney, roasted peanuts, pomegranate seeds, sev
+                        (chickpea flour noodles), onion, coriander leaves, oil or ghee, salt, and lemon juice.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Dabeli', 30)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Dhokala.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Dhokala</h5>
+                        <h5 class="price"> Rs.55 </h5>
+                    </div>
+                    <p>Gram flour (besan), semolina (sooji), yogurt, water, ginger-green chili paste, turmeric powder,
+                        salt, lemon juice, eno (fruit salt), mustard seeds, sesame seeds, curry leaves, oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Dhokala', 55)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/dhosa.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Dhosa</h5>
+                        <h5 class="price"> Rs.80 </h5>
+                    </div>
+                    <p>Rice and urad dal (black gram lentils), fenugreek seeds, salt, water, potato masala (potatoes,
+                        onions, green chilies, mustard seeds, turmeric, curry leaves), oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Dhosa', 80)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/fafada.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Fafada-Gathiya</h5>
+                        <h5 class="price"> Rs.60 </h5>
+                    </div>
+                    <p>Chickpea flour (besan), ajwain (carom seeds), turmeric powder, red chili powder, baking soda,
+                        salt, water, oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Fafada-Gathiya', 60)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/ghughara.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Ghughara</h5>
+                        <h5 class="price"> Rs.35 </h5>
+                    </div>
+                    <p>Chickpea flour (besan), semolina (sooji), green chilies, ginger, garlic, coriander leaves, cumin
+                        seeds, turmeric powder, red chili powder, garam masala, salt, water, oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Ghughara', 35)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Meggie.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Meggie</h5>
+                        <h5 class="price"> Rs.40 </h5>
+                    </div>
+                    <p>Maggi noodles, water, Maggi masala seasoning packet, vegetables (such as onions, carrots, peas),
+                        oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Maggi', 40)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/pizza.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Pizza</h5>
+                        <h5 class="price"> Rs.100 </h5>
+                    </div>
+                    <p>Pizza dough, pizza sauce, mozzarella cheese, vegetables (such as bell peppers, onions, mushrooms,
+                        olives), olive oil, salt, pepper, dried herbs (such as oregano, basil).</p>
+                    <button type="submit" class="submit" onclick="addToCart('Pizza', 100)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Samosa.webp">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Samosa</h5>
+                        <h5 class="price"> Rs.30 </h5>
+                    </div>
+                    <p>All-purpose flour, potatoes, green peas, onions, green chilies, ginger, coriander leaves, cumin
+                        seeds, coriander powder, garam masala, turmeric powder, salt, oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Samosa', 30)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/sanwich.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Sanwich</h5>
+                        <h5 class="price"> Rs.40 </h5>
+                    </div>
+                    <p>Bread slices, butter, cheese, lettuce, tomato, cucumber, onion, mayonnaise, mustard, salt,
+                        pepper.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Sandwich', 40)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/vada-pav.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Vada-pav</h5>
+                        <h5 class="price"> Rs.30 </h5>
+                    </div>
+                    <p>Potatoes, bread slices, gram flour (besan), green chilies, ginger, garlic, turmeric powder,
+                        mustard seeds, cumin seeds, curry leaves, coriander leaves, salt, oil.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Vada-pav', 30)">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Snacks Menu Items End -->
+
+            <!-- Cold-drinks Menu Items Start -->
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Sprite.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Sprite</h5>
+                        <h5 class="price"> Rs.20 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Sprite', 20)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/maaza.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Maaza</h5>
+                        <h5 class="price"> Rs.25 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Maaza', 25)">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/jeera-masala.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Jeera Masala</h5>
+                        <h5 class="price"> Rs.10 </h5>
+                    </div>
+                    <button type="submit" class="submit" onclick="addToCart('Jeera Masala', 10)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/thumsup.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Thums Up</h5>
+                        <h5 class="price"> Rs.20 </h5>
+                    </div>
+                    <button type="submit" class="submit" onclick="addToCart('Thums Up', 10)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Coco-cola.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Coca Cola</h5>
+                        <h5 class="price"> Rs.20 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Coca Cola', 20)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/mountaindew.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Mountain Dew</h5>
+                        <h5 class="price"> Rs.20 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Mountain Dew', 20)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/redbull.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Red Bull</h5>
+                        <h5 class="price"> Rs.125 </h5>
+                    </div>
+                    <button type="submit" class="submit" onclick="addToCart('Red Bull', 125)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/monster.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Monster</h5>
+                        <h5 class="price"> Rs.200 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Monster', 200)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/appy-fizz.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Appy Fizz</h5>
+                        <h5 class="price"> Rs.35 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Appy Fizz', 35)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/real-.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Real Fruit Power</h5>
+                        <h5 class="price"> Rs.35 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Real Fruit Power', 35)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/non-alcoholic.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Non-Alcoholic Beer</h5>
+                        <h5 class="price"> Rs.100 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Non-Alcoholic Beer ', 100)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/kinely-water.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Kinley Packaged Water</h5>
+                        <h5 class="price"> Rs.20 </h5>
+                    </div>
+
+                    <button type="submit" class="submit" onclick="addToCart('Kinley Packaged Water', 20)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <!-- Cold-drink Menu Item End -->
+
+            <!-- Milk Menu Item Start -->
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/cold-coco.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Cold Coco</h5>
+                        <h5 class="price"> Rs.70 </h5>
+                    </div>
+                    <p>Cold cocoa spilled, chaos ensued in the line, delaying orders but prompting swift cleanup.</p>
+
+                    <button type="submit" class="submit" onclick="addToCart('Cold Coco', 70)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/strawberry.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Stawberry Milkshake</h5>
+                        <h5 class="price"> Rs.65 </h5>
+                    </div>
+                    <p>A strawberry milkshake mishap occurred when a server accidentally knocked over a tray, drenching
+                        nearby tables and customers in a sticky pink cascade. </p>
+                    <button type="submit" class="submit" onclick="addToCart('Stawberry Milkshake', 65)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/vanilla.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Vanilla Special</h5>
+                        <h5 class="price"> Rs.55 </h5>
+                    </div>
+                    <p>The Vanilla Special milkshake, famed for its creamy delight, caused a frenzy as its popularity
+                        surged, momentarily leaving aficionados longing for more.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Vanilla Special', 55)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/chocolate.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Chocolate Shake</h5>
+                        <h5 class="price"> Rs.60 </h5>
+                    </div>
+                    <p>Chocolate milkshake mishap: a tray slips, a chocolaty cascade ensues, followed by swift apologies
+                        and cleanup by the staff.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Chocolate Shake', 60)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/oreo.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Oreo Shake</h5>
+                        <h5 class="price"> Rs.180 </h5>
+                    </div>
+                    <p>Oreo milkshake mix-up: orders confused, cookies crumbled, but smiles returned after creamy
+                        concoctions were swiftly corrected.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Oreo Shake', 180)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/caramel.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Triple Nut Caramel</h5>
+                        <h5 class="price"> Rs.100 </h5>
+                    </div>
+                    <p>Triple nut caramel milkshake mishap: a spill causes chaos, but patrons delighted in complimentary
+                        refills as staff swiftly restored order.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Triple Nut Caramel', 100)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/kitkat.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>KitKat</h5>
+                        <h5 class="price"> Rs.150 </h5>
+                    </div>
+                    <p>KitKat milkshake commotion: a spill halted queues, but quick recovery left patrons happily
+                        indulging in chocolatey bliss.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Cold Coco', 70)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/butter.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Butterscotch Falooda </h5>
+                        <h5 class="price"> Rs.120 </h5>
+                    </div>
+                    <p>Butterscotch falooda mix-up: a spill created a sticky situation, yet patrons enjoyed
+                        complimentary replacements as the staff promptly rectified the error.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Butterscotch Falooda', 120)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/rose.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Rose Falooda</h5>
+                        <h5 class="price"> Rs.110 </h5>
+                    </div>
+                    <p>Rose falooda fiasco: a toppled glass caused a fragrant mess, but swift cleanup and complimentary
+                        replacements restored smiles.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Rose Falooda', 110)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/mango.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Mango Falooda</h5>
+                        <h5 class="price"> Rs.120 </h5>
+                    </div>
+                    <p>Mango falooda mishap: a toppled treat caused fruity chaos, but swift replacements and apologies
+                        left patrons satisfied.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Mango Falooda', 120)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/cookies.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Cookies and Cream ThickShake</h5>
+                        <h5 class="price"> Rs.210 </h5>
+                    </div>
+                    <p>Cookies and Cream ThickShake mix-up: a spill disrupted service momentarily, but swift cleanup and
+                        replacements ensured satisfied customers.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Cookies and Cream ThickShake', 210)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.1s" id="brack">
+                <img src="menuimg/Salted-Caramel-Milkshake.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Caramel Chocolate Shake</h5>
+                        <h5 class="price"> Rs.90 </h5>
+                    </div>
+                    <p>Caramel Chocolate Shake mishap: a spill caused a brief frenzy, but prompt cleanup and
+                        replacements restored sweet satisfaction.</p>
+                    <button type="submit" class="submit" onclick="addToCart('Caramel Chocolate Shake', 90)">Add To
+                        Cart</button>
+                </div>
+            </div>
+            <!-- Milk Menu Items End -->
+        </div>
+        <!-- Shopping Cart With Total Amount -->
+        <div class="heading details">
+            <h1>Shopping Cart</h1>
+            <ul id="cart" type="none"></ul>
+            <a href="Card.html"><button class="procced_to_pay">Procced To Pay</button></a>
+        </div>
+
+        <!-- Footer start-->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <!-- About pages of website -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="iclone.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="menu.html">Menu</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <!-- About adress and contact detail -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>LJ University, Sarkhej, Ahemdabad</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- About timing detail -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <!-- To Login Our Canteen -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">College Canteen
+                        </h4>
+                        <p>Indulge your taste buds at our food canteen, where every dish is a culinary adventure waiting
+                            to be savored...</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <a href="login.html" class="btn btn-primary py-2 px-4">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About other pages we can upload hear but this pages is panding to work -->
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Mystery Code</a> | All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to Top Arrow-->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+        <!-- Footer end -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script>
+            // Array to store cart items
+            let cart = [];
+            var total = 0;
+
+            // Function to add item to cart
+            function addToCart(productName, price) {
+                cart.push({ productName, price });
+                total = total + price;
+                updateCart();
+
+            }
+
+            // Function to update the cart UI
+            function updateCart() {
+                const cartElement = document.getElementById('cart');
+                cartElement.innerHTML = '';
+
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.productName} - Rs.${item.price}`;
+
+                    cartElement.appendChild(li);
+                })
+                const li = document.createElement('li');
+                li.textContent = `Total Amount : Rs.${total}`;
+                cartElement.appendChild(li);
+
+            }
+        </script>
+</body>
+
+</html>

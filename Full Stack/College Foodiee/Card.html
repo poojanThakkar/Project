@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+     <!--Div For Navbar -->
+    <div class="container-xxl position-relative p-0">
+       <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0" style="background: #0F172B !important;">
+        <!-- Logo of website -->
+        <a href="" class="navbar-brand p-0">
+          <h2 style="color: #FEA116"><img src="img/order-food.png" alt="Logo"> Foodieee</h2>
+        </a>
+        <!-- When Screen Size is small then executive button for taggleable Navbar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <!-- Diffrent Pages add with Navbar -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0 pe-4">
+            <a href="iclone.html" class="nav-item nav-link ">Home</a>
+            <a href="about.html" class="nav-item nav-link ">About</a>
+            <a href="menu.html" class="nav-item nav-link active">Menu</a>
+            <a href="FeedBack.html" class="nav-item nav-link">FeedBack</a>
+          </div>
+          <!-- Login Page -->
+          <a href="login.html" class="btn btn-primary py-2 px-4"> Login </a>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- For Payment Methods -->
+    <div class="heading text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h1 class="mb-5">Payment Methods</h1>
+      <br>
+      
+      <div class="time">
+        <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+          <!-- For Credit card method -->
+          <li class="nav-item">
+            <a class=" d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#Card">
+              <i class="fas fa-credit-card fa-2x text-primary"></i>
+              <div class="ps-3">
+                <small class="text-body">Credit/Debit</small>
+                <h6 class="mt-n1 mb-0">Card</h6>
+              </div>
+            </a>
+          </li>
+          <!-- For Upi method -->
+          <li class="nav-item">
+            <a class=" d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#Upi">
+              <i class="fas fa-landmark fa-2x text-primary"></i>
+              <div class="ps-3">
+                <small class="text-body">UPI</small>
+                <h6 class="mt-n1 mb-0">Transection</h6>
+              </div>
+            </a>
+          </li>
+          <!-- For Cash on delivery method -->
+          <li class="nav-item">
+            <a class=" d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#CoDeliver">
+              <i class="fas fa-rupee-sign fa-2x text-primary"></i>
+              <div class="ps-3">
+                <small class="text-body">Cash On</small>
+                <h6 class="mt-n1 mb-0">Delivery</h6>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content heading text-center wow fadeInUp" data-wow-delay="0.1s">
+      <!-- Card Pyment Details with delivery -->
+      <div class="container main tab-pane active"  id="Card">
+        <form id="paymentForm" action="FeedBack.html">
+          <br>
+          <div class="form-group">
+            <label for="cardNumber" style="font-size: large;">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="expDate" style="font-size: large;">Expiration Date</label>
+            <input type="text" class="form-control" id="expDate" placeholder="MM/YYYY" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="name" style="font-size: large;">Cardholder's Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter cardholder's name" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="amount" style="font-size: large;">Amount</label>
+            <input type="text" class="form-control" id="amount" placeholder="Enter Amount : " required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cardNumber" style="font-size: large;">Building Name</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter Building Name" >
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="expDate" style="font-size: large;">Room No</label>
+            <input type="text" class="form-control" id="expDate" placeholder="Enter Room No" >
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">Garden/Ground Name</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter Garden/Ground Name" >
+          </div>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Submit Payment</button>
+        </form>
+      </div>
+
+      <!-- UPI peyment method with delivary method -->
+      <div class="container main tab-pane" id="Upi">
+        <form id="paymentForm" action="FeedBack.html">
+          <br>
+          <div class="form-group">
+            <label for="cardNumber" style="font-size: large;">UPI id</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter UPI Id" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="expDate" style="font-size: large;">Pin</label>
+            <input type="text" class="form-control" id="expDate" placeholder="Enter Pin" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">OTP</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter OTP" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="amount" style="font-size: large;">Amount</label>
+            <input type="text" class="form-control" id="amount" placeholder="Enter amount" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cardNumber" style="font-size: large;">Building Name</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter Building Name" >
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="expDate" style="font-size: large;">Room No</label>
+            <input type="text" class="form-control" id="expDate" placeholder="Enter Room No" >
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">Garden/Ground Name</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter Garden/Ground Name" >
+          </div>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Submit Payment</button>
+        </form>
+      </div>
+
+      <!-- Cash On Delivery -->
+      <div class="container main tab-pane" id="CoDeliver">
+        <form id="paymentForm" action="FeedBack.html">
+          <br>
+          <div class="form-group">
+            <label for="cardNumber" style="font-size: large;">Building Name</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter Building Name" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="expDate" style="font-size: large;">Room No</label>
+            <input type="text" class="form-control" id="expDate" placeholder="Enter Room No" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">Garden/Ground Name</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter Garden/Ground Name" >
+          </div>
+          <div class="form-group">
+            <label for="cvv" style="font-size: large;">Other Notes</label>
+            <input type="textarea" class="form-control" id="cvv" placeholder="" rows="5" cols="10">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary" onsubmit="" style="margin-left: 10px; width: 200px;">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer start-->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- About pages of website -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+            <a class="btn btn-link" href="iclone.html">Home</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="menu.html">Menu</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+          </div>
+          <!-- About adress and contact detail -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>LJ University, Sarkhej, Ahemdabad</p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <!-- About timing detail -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+            <h5 class="text-light fw-normal">Monday - Saturday</h5>
+            <p>09AM - 09PM</p>
+            <h5 class="text-light fw-normal">Sunday</h5>
+            <p>10AM - 08PM</p>
+          </div>
+          <!-- To Login Our Canteen -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">College Canteen</h4>
+            <p>Indulge your taste buds at our food canteen, where every dish is a culinary adventure waiting to be savored...</p>
+            <div class="position-relative mx-auto" style="max-width: 400px;">
+                <a href="login.html" class="btn btn-primary py-2 px-4">Login</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- About other pages we can upload hear but this pages is panding to work -->
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Mystery Code</a> | All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  </div>
+  <!-- Footer end -->
+  <br>
+  <br>
+
+
+  <script >
+   function submit(){
+
+   }
+  </script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
